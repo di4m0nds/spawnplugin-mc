@@ -14,7 +14,7 @@ This plugin allows players to set and teleport to a custom spawn point. It inclu
 
 ## Installation
 
-1. Download the latest release from the [Releases](#) page.
+1. Download the latest release from the [Releases](https://github.com/di4m0nds/spawnplugin-mc/releases) page.
 2. Place the JAR file in the `plugins` directory of your Spigot server.
 3. Restart your Spigot server.
 
