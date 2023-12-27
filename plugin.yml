@@ -1,0 +1,28 @@
+api-version: 1.20
+name: SpawnPlugin
+version: 0.0.1+18-BETA
+main: com.di4m0nds.spawnplugin.SpawnPlugin
+prefix: "SPAWN_PLUGIN"
+load: STARTUP
+
+author: di4m0nds
+description: A feature-rich Spigot plugin for managing custom spawn points and teleportation.
+
+website: https://github.com/di4m0nds/spawnplugin-mc
+
+commands:
+  setspawn:
+    description: Set the spawn point location wherever you want.
+    usage: "/<command>"
+  hub:
+    description: Teleports you to the spawn point of the world.
+    usage: "/<command>"
+    aliases: [lobby, spawn, home]
+
+permissions:
+  spawnplugin.admin:
+    description: Allows access to admin features of SpawnPlugin
+    default: op
+
+config:
+  - config.yml
