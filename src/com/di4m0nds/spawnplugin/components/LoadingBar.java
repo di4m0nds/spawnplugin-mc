@@ -35,6 +35,7 @@ public class LoadingBar {
      * @param msg The message to be sent to the player upon successful teleportation.
      * @param barColor The color of the loading bar.
      * @param barStyle The style of the loading bar.
+     * @param barTitle The text of the loading bar.
      *
      * @description
      * Creates and displays a boss bar with a specified color and style.
@@ -52,8 +53,9 @@ public class LoadingBar {
      * The `20L` parameter in `runTaskTimer(plugin, 0L, 20L)` represents a tick interval (1 tick = 1/20th of a second).
      * Adjust as needed for the desired update frequency.
      */
-    public void teleportWithDelay(Location location, String msg, BarColor barColor, BarStyle barStyle) {
-        BossBar bossBar = Bukkit.createBossBar("§e§k00 §r§cTeleportation Sequence Initiated §e§k00", barColor, barStyle);
+    public void teleportWithDelay(Location location, String msg, BarColor barColor, BarStyle barStyle, String barTitle) {
+        BossBar bossBar = Bukkit.createBossBar(barTitle, barColor, barStyle);
+
         bossBar.setProgress(1.0); // Set the initial progress (1.0 is 100%)
 
         bossBar.addPlayer(player);
