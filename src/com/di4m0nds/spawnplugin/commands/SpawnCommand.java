@@ -75,7 +75,8 @@ public class SpawnCommand implements CommandExecutor {
                 location,
                 "§e§l\u2615 §rYou have been teleported to the §e§lHUB §rPoint.",
                 BarColor.RED,
-                BarStyle.SOLID
+                BarStyle.SOLID,
+                "§e§k00 §r\u231B §cTeleportation Sequence §r\u231B §e§k00"
         );
 
         return true;
